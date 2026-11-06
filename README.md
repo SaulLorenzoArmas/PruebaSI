@@ -2,41 +2,23 @@
 
 ```mermaid
 %%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#dbeafe',
-    'primaryTextColor': '#0f172a',
-    'primaryBorderColor': '#2563eb',
-    'lineColor': '#64748b',
-    'secondaryColor': '#f1f5f9',
-    'tertiaryColor': '#ffffff',
-    'critBkgColor': '#ef4444',
-    'critBorderColor': '#b91c1c',
-    'doneTaskBkgColor': '#94a3b8',
-    'doneTaskBorderColor': '#475569',
-    'taskTextDarkColor': '#0f172a',
-    'taskTextColor': '#0f172a',
-    'taskTextOutsideColor': '#0f172a',
-    'sectionBkgColor': '#f8fafc',
-    'altSectionBkgColor': '#e2e8f0',
-    'gridColor': '#cbd5e1',
-    'fontSize': '14px'
-  },
-  'gantt': {
-    'leftPadding': 220,
-    'rightPadding': 90,
-    'barHeight': 26,
-    'barGap': 8,
-    'topPadding': 50,
-    'sectionFontSize': 14,
-    'numberSectionStyles': 2
+  "theme": "dark",
+  "gantt": {
+    "leftPadding": 260,
+    "rightPadding": 180,
+    "barHeight": 30,
+    "barGap": 14,
+    "topPadding": 65,
+    "sectionFontSize": 15,
+    "fontSize": 14,
+    "numberSectionStyles": 2
   }
 }}%%
 gantt
     title Cronograma del Proyecto NextQuest (2026 - 2027)
     dateFormat  YYYY-MM-DD
     axisFormat  %d/%m
-    todayMarker off
+    todayMarker stroke:#ef4444,stroke-width:3px
 
     section Sprint 1: Arranque y Diseño
     T1.1 Acta de Constitución (Saúl y Sonia)                   :done, t1_1, 2026-10-23, 1d
@@ -48,7 +30,7 @@ gantt
 
     section Sprint 3: Perfiles e IA (NLP)
     T3.1 Gestión de cuentas y perfiles (Sonia)                 :t3_1, 2026-11-20, 2026-11-27
-    T3.2 Entrenar IA análisis emocional (Sonia y Saúl)         :crit, t3_2, 2026-11-20, 2026-12-02
+    T3.2 Entrenar IA análisis emocional (Saúl)                 :crit, t3_2, 2026-11-20, 2026-12-02
     T3.3 Conectar modelo mediante API REST (Sonia y Saúl)      :t3_3, 2026-12-02, 2026-12-04
 
     section Sprint 4: Recomendador y Filtros
